@@ -3,7 +3,131 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
+    /*
+     * 活动首页
+     */
     public function index(){
-	$this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px }</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p></div><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
+        $this->display();
     }
+
+    /*
+     *发布活动类型页面
+     */
+    public function post(){
+        $this->display();
+    }
+
+    /*
+     *找活动页面
+     */
+    public function find(){
+        $this->display();
+    }
+
+    /*
+     *找活动详情页面
+     */
+    public function detail(){
+
+        $this->display();
+    }
+
+
+    /*
+    *发布各种东西
+    */
+    public function publish (){
+        $type  = trim($_GET['type']);
+        switch($type){
+            //主题
+            case 'theme':
+                break;
+            //户外
+            case 'outdoor':
+                break;
+            //聚会
+            case 'party':
+                break;
+            //沙龙
+            case 'salon':
+                break;
+            //促销
+            case 'promotion':
+                break;
+            //会议
+            case 'meeting':
+                break;
+            //课程
+            case 'class':
+                break;
+            //课程
+            case 'article':
+                $this->display('fromarticle');
+                break;
+            //投票
+            case 'vote':
+                $this->display('fromvote');
+                break;
+            default :
+                echo "<h2>暂无开放此功能</h2>";
+                break;
+
+        }
+    }
+
+    /*
+    *表单
+    */
+    public function onlined(){
+        //接收表单信息
+        if($_POST['submit']=='submit'&&IS_POST){
+            $type = isset($_POST['type'])?$_POST['type']:'theme';
+            switch($type){
+                //主题
+                case 'theme':
+                    break;
+                //户外
+                case 'outdoor':
+                    break;
+                //聚会
+                case 'party':
+                    break;
+                //沙龙
+                case 'salon':
+                    break;
+                //促销
+                case 'promotion':
+                    break;
+                //会议
+                case 'meeting':
+                    break;
+                //课程
+                case 'class':
+                    break;
+                //课程
+                case 'article':
+                    break;
+                //投票
+                case 'vote':
+                    break;
+                default :
+                    break;
+            }
+            //公共信息
+            $data['time'] = time();
+
+        }
+    }
+
+    /*
+     * 个人中心
+     */
+    public function space(){
+
+        $this->display();
+    }
+
+
+
+
 }
