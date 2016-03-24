@@ -8580,3 +8580,28 @@ INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 ERR: 非法操作:spave
 
+[ 2016-03-23T17:25:40+08:00 ] 127.0.0.1 /index.php/Home/Index/post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant theme - assumed 'theme' F:\web\www\hudongba.com\Application\Runtime\Cache\Home\56f897a30c8801a2c2d0454132556305.php 第 66 行.
+NOTIC: [8] Use of undefined constant outdoor - assumed 'outdoor' F:\web\www\hudongba.com\Application\Runtime\Cache\Home\56f897a30c8801a2c2d0454132556305.php 第 74 行.
+NOTIC: [8] Use of undefined constant party - assumed 'party' F:\web\www\hudongba.com\Application\Runtime\Cache\Home\56f897a30c8801a2c2d0454132556305.php 第 82 行.
+NOTIC: [8] Use of undefined constant salon - assumed 'salon' F:\web\www\hudongba.com\Application\Runtime\Cache\Home\56f897a30c8801a2c2d0454132556305.php 第 92 行.
+NOTIC: [8] Use of undefined constant promotion - assumed 'promotion' F:\web\www\hudongba.com\Application\Runtime\Cache\Home\56f897a30c8801a2c2d0454132556305.php 第 100 行.
+NOTIC: [8] Use of undefined constant meeting - assumed 'meeting' F:\web\www\hudongba.com\Application\Runtime\Cache\Home\56f897a30c8801a2c2d0454132556305.php 第 108 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\web\www\hudongba.com\Application\Runtime\Cache\Home\56f897a30c8801a2c2d0454132556305.php 第 126 行.
+NOTIC: [8] Use of undefined constant fromvote - assumed 'fromvote' F:\web\www\hudongba.com\Application\Runtime\Cache\Home\56f897a30c8801a2c2d0454132556305.php 第 134 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

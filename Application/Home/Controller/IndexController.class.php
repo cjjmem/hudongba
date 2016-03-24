@@ -28,7 +28,6 @@ class IndexController extends Controller {
      *找活动详情页面
      */
     public function detail(){
-
         $this->display();
     }
 
@@ -83,6 +82,7 @@ class IndexController extends Controller {
         if($_POST['submit']=='submit'&&IS_POST){
             $type = isset($_POST['type'])?$_POST['type']:'theme';
             switch($type){
+               // 类型 1.主题2.户外3.聚会4.沙龙5.促销6.会议7.课程8.文章9.投票
                 //主题
                 case 'theme':
                     break;
@@ -104,7 +104,7 @@ class IndexController extends Controller {
                 //课程
                 case 'class':
                     break;
-                //课程
+                //文章
                 case 'article':
                     break;
                 //投票
