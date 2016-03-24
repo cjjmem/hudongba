@@ -70,7 +70,6 @@ class IndexController extends Controller {
             default :
                 echo "<h2>暂无开放此功能</h2>";
                 break;
-
         }
     }
 
